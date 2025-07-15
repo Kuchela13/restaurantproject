@@ -62,6 +62,7 @@ li {
   color: #951c49;
   text-align: center;
   text-decoration: none;
+  margin: auto;
 }
 #nav-list a:hover {
   background: #e7e7e7;
@@ -177,6 +178,94 @@ li {
   opacity: 0.8;
 }
 
+/* MENU CATEGORIES PAGE */
+.category-tile {
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: 0.8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+
+.menu-item-tile hr {
+  width: 80%;
+}
+
+.menu-item-tile .menu-item-price {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: 0.6em;
+}
+
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3f0c1f;
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: 0.9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
+.active {
+  background-color: #e7e7e7;
+  width: 100%;
+}
+
+.topper {
+  margin-top: 20px;
+}
+
 @media (min-width: 1400px) {
   .container .jumbotron {
     background: url("../images/jumbotron_1200.jpg") no-repeat;
@@ -222,6 +311,25 @@ li {
     background: url("../images/jumbotron_992.jpg") no-repeat;
     height: 558px;
   }
+
+  .category-tile {
+    position: relative;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    width: 165px;
+    height: 165px;
+    margin: 0 auto 15px;
+  }
+
+  .menu-item-tile .menu-item-price {
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: -15px;
+    margin-right: -15px;
+  }
+  .menu-item-tile .menu-item-price span {
+    font-size: 0.6em;
+  }
 }
 
 /********** Small devices only **********/
@@ -232,6 +340,9 @@ li {
     height: 432px;
   }
   /* End Home Page */
+  .col-xs-6 {
+    width: 50%;
+  }
 }
 
 /********** Extra small devices only **********/
@@ -296,6 +407,24 @@ li {
   #specials-tile {
     width: 360px;
     margin: 0 auto 15px;
+  }
+  .menu-item-photo {
+    margin-right: auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+
+  .menu-item-description {
+    text-align: center;
+  }
+
+  hr {
+    margin: auto;
+  }
+
+  a svg {
+    margin-right: 3px;
   }
 }
 
