@@ -343,6 +343,10 @@ h3.menu-item-title {
   .col-xs-6 {
     width: 50%;
   }
+
+  #navbarSupportedContent {
+    margin-top: 40px;
+  }
 }
 
 /********** Extra small devices only **********/
